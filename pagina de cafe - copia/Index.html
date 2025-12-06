@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aromas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logoCafe.avif" alt="Logo">
+                <span>Café Aromas</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+            <button id="cart-btn" class="cart-btn">Carrito <span id="cart-count">0</span></button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <img src="images/coffeeMain.png" class="hero-img">
+        <h1>Bienvenido a Café Aromas</h1>
+        <p>El mejor café para empezar tu día ☕✨</p>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="menu-section">
+
+        <!-- 🐱 GATO APROBANDO LA TIENDA -->
+        <div class="approval-cat">
+            <img src="images/gatoCafe.png" alt="Gato aprobando la tienda">
+            <p class="cat-text">✓ Aprobado por el Gato Inspector</p>
+        </div>
+
+        <h2>Nuestro Menú Completo</h2>
+        <div class="menu-grid" id="menu-container"></div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section id="registro" class="form-container">
+        <h2>Regístrate</h2>
+        <form id="register-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Crear cuenta</button>
+        </form>
+    </section>
+
+    <!-- CARRITO -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span id="close-cart" class="close">&times;</span>
+            <h2>Tu carrito</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: $<span id="cart-total">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
